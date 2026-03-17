@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>InnoSphere – Student Project Showcase</title>
     <meta name="description" content="Discover innovative student engineering projects across all departments."/>
+    <!-- GitHub Pages SPA: restore path from 404 redirect -->
+    <script>
+      (function(){
+        var r = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (r && r !== location.href) {
+          history.replaceState(null, null, r);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
